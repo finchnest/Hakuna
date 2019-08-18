@@ -34,7 +34,7 @@ public class GridbaseC implements Initializable {
     private void loadData() {
 
         int identifier = new InteractController().getMethodIdentifier();
- 
+
         SocketConnectionSingleton mSingleton = SocketConnectionSingleton.getInstance();
 
         switch (identifier) {
@@ -157,9 +157,6 @@ public class GridbaseC implements Initializable {
                     userDocs = (ArrayList) mSingleton.objectInputStream.readObject();
 
 
-                    GridPane gridPane = new GridPane();
-                    gridPane.setPrefSize(180, 180);
-                
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
