@@ -34,7 +34,7 @@ public class GridbaseC implements Initializable {
     private void loadData() {
 
         int identifier = new InteractController().getMethodIdentifier();
-
+ 
         SocketConnectionSingleton mSingleton = SocketConnectionSingleton.getInstance();
 
         switch (identifier) {
