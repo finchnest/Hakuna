@@ -1,0 +1,12 @@
+.motto{
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 24px;
+}
+
+.toBeRegPane{
+    -fx-background-color: #454545;
+}
+
+.redder{
+    -fx-text-fill: #cc0000;
+}

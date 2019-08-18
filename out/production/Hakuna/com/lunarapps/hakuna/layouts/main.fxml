@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="mainFrame" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="590.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lunarapps.hakuna.mainOps.MainController">
+   <children>
+      <Pane prefHeight="590.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="470.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="loginBtn" layoutX="114.0" layoutY="263.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="128.0" text="Log In">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button  layoutX="114.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#performSignup" prefHeight="32.0" prefWidth="128.0" text="Sign Up">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <PasswordField fx:id="passwordInput" layoutX="121.0" layoutY="186.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></PasswordField>
+            <TextField fx:id="usernameInput" layoutX="126.0" layoutY="121.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Label layoutX="116.0" layoutY="355.0" text="Don't have an account?" />
+            <Label layoutX="42.0" layoutY="189.0" text="Password :" />
+            <Label layoutX="38.0" layoutY="127.0" text="Username :" />
+         </children></Pane>
+      <Pane fx:id="signupPane" layoutX="430.0" prefHeight="590.0" prefWidth="470.0" styleClass="toBeRegPane" stylesheets="@../css/main">
+         <children>
+            <Label layoutX="30.0" layoutY="62.0" styleClass="motto" stylesheets="@../css/main" text="Put your images and documents in " />
+            <Label layoutX="76.0" layoutY="100.0" styleClass="motto" stylesheets="@../css/main" text=" our secure cloud service" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
