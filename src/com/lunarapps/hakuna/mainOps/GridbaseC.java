@@ -156,6 +156,14 @@ public class GridbaseC implements Initializable {
                     ArrayList userDocs = new ArrayList();
                     userDocs = (ArrayList) mSingleton.objectInputStream.readObject();
 
+
+                    GridPane gridPane = new GridPane();
+                    gridPane.setPrefSize(180, 180);
+                    gridPane.setVgap(5);
+                    gridPane.setHgap(20);
+                    gridPane.setLayoutY(10);
+                    gridPane.setLayoutX(40);//there will be a 40px gap from the first and last grids to the parent
+
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {

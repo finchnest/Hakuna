@@ -1,8 +1,8 @@
 package com.lunarapps.hakuna.mainOps;
 
 
-import com.lunarapps.hakuna.models.User;
 import com.lunarapps.hakuna.ServiceNames;
+import com.lunarapps.hakuna.models.User;
 import com.lunarapps.hakuna.network.SocketConnectionSingleton;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -87,8 +87,10 @@ public class MainController {
                     mSingleton.objectOutputStream.writeObject(concat);
                     mSingleton.objectOutputStream.flush();
 
+                    //git test
                     String booleanValue = new BufferedReader(mSingleton.inputStreamReader).readLine();
                     boolean valid = Boolean.parseBoolean(booleanValue);
+
                     if (valid) {
 
                         //code to accept the user object goes here
